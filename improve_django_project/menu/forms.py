@@ -1,9 +1,10 @@
 from django import forms
+from .models import Menu
 
-from .models import Menu, Item, Ingredient
 
 class DateInput(forms.DateInput):
     input_type = 'date'
+
 
 class MenuForm(forms.ModelForm):
 
@@ -16,5 +17,4 @@ class MenuForm(forms.ModelForm):
         season = self.cleaned_data['season']
 
         if not season:
-            raise forms.ValidationError(
-                "Add a name for the Season.")
+            raise forms.ValidationError("Add a name for the Season.")

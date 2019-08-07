@@ -23,7 +23,7 @@ sign in and done.
 
 Check test coverage
 
-* coverage run --source='.' manage.py test minerals
+* coverage run --source='.' manage.py test menu
 * coverage report
 
 -----------------------------------------

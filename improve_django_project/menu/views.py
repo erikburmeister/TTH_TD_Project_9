@@ -43,7 +43,7 @@ def create_new_menu(request):
 
 def edit_menu(request, pk):
     menu = get_object_or_404(Menu, pk=pk)
-    form = MenuForm(instance=menu)
+    form = MenuForm(request.POST or None, instance=menu)
 
     if request.method == "POST":
         form = MenuForm(request.POST, instance=menu)
