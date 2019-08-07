@@ -11,8 +11,10 @@ We need to fix the following:
 * Make tests to cover 75% or more
 
 -----------------------------------------
+
 Check the site preview image & coverage image 
 for quick look at the result.
+
 -----------------------------------------
 
 To Create a User
